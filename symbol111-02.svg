@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1077.45 1077.45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: #d897e3;
+      }
+
+      .cls-3 {
+        fill: #8d85f2;
+      }
+
+      .cls-4 {
+        fill: #ffd3d8;
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="535.45" cy="537.8" fx="535.45" fy="537.8" r="236.1" gradientUnits="userSpaceOnUse">
+      <stop offset=".26" stop-color="#8d85f2"/>
+      <stop offset="1" stop-color="#d897e3"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="14.54" y1="538.34" x2="1057.43" y2="538.34" gradientUnits="userSpaceOnUse">
+      <stop offset=".35" stop-color="#ffd3d8"/>
+      <stop offset=".78" stop-color="#8d85f2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="290.87" y1="538.34" x2="781.1" y2="538.34" gradientUnits="userSpaceOnUse">
+      <stop offset=".35" stop-color="#ffd3d8"/>
+      <stop offset=".77" stop-color="#8d85f2"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-5" d="m709.4,329.07c-59.22-37.91-119.23-4.32-150.95,20.38-13.55,10.55-32.44,10.55-45.99,0-31.72-24.7-91.74-58.29-150.95-20.38-107.62,68.9-123.35,280.69,156.45,430.15,10.93,5.84,24.08,5.84,35.01,0,279.79-149.46,264.07-361.25,156.45-430.15Z"/>
+  <path class="cls-6" d="m1057.43,538.34c-550.96-16.3-537.74-29.52-521.44,521.44,16.3-550.96,29.52-537.74-521.44-521.44,550.96,16.3,537.74,29.52,521.44-521.44-16.3,550.96-29.52,537.74,521.44,521.44Z"/>
+  <path class="cls-1" d="m781.1,783.45c-251.32-266.65-238.9-266.65-490.22,0,266.65-251.32,266.65-238.9,0-490.22,251.32,266.65,238.9,266.65,490.22,0-266.65,251.32-266.65,238.9,0,490.22Z"/>
+  <path class="cls-3" d="m781.41,256.8q0-73.62-73.62-73.62,73.62,0,73.62-73.62,0,73.62,73.62,73.62-73.62,0-73.62,73.62Z"/>
+  <path class="cls-3" d="m178.26,673.05q0-28.85-28.85-28.85,28.85,0,28.85-28.85,0,28.85,28.85,28.85-28.85,0-28.85,28.85Z"/>
+  <path class="cls-2" d="m132.1,614.01c-12.17,0-22.06-9.9-22.06-22.06s9.9-22.06,22.06-22.06,22.06,9.9,22.06,22.06-9.9,22.06-22.06,22.06Zm0-39.32c-9.51,0-17.25,7.74-17.25,17.25s7.74,17.25,17.25,17.25,17.25-7.74,17.25-17.25-7.74-17.25-17.25-17.25Z"/>
+  <circle class="cls-4" cx="844.34" cy="256.27" r="13.9"/>
+</svg>

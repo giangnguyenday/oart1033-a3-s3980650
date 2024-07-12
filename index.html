@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>angel numbers</title>
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+    <div>
+        <div id="abox" class="box"> <label id="randnoA" class="number"></label> </div>
+        <div id="bbox" class="box"> <label id="randnoB" class="number"></label> </div>
+        <div id="cbox" class="box"> <label id="randnoC" class="number"></label> </div>
+    </div>
+  <button id="randomizeButton">
+    <p id="rand">randomize</p>
+
+<div id="messages">
+   <h1 id="angelnumbername"></h1>
+   <p id="details"></p>
+</div>
+</button>
+
+</div>
+
+<div>
+<div id="blackbackground"></div>
+<img src="gradient111-01.svg" class="gradient gradienta gradient111" id="gradient1a">
+<img src="gradient111-01.svg" class="gradient gradientb gradient111" id="gradient1b">
+<img src="gradient111-02.svg" class="gradient gradientc gradient111" id="gradient1c">
+
+<img src="gradient222-01-01.svg" class="gradient gradienta gradient222" id="gradient2a">
+<img src="gradient222-01-01.svg" class="gradient gradientb gradient222" id="gradient2b">
+<img src="gradient222-02.svg" class="gradient gradientc gradient222" id="gradient2c">
+
+<img src="gradient333-01.svg" class="gradient gradienta gradient333" id="gradient3a">
+<img src="gradient333-01.svg" class="gradient gradientb gradient333" id="gradient3b">
+<img src="gradient333-02.svg" class="gradient gradientc gradient333" id="gradient3c">
+
+<img src="gradient444-01.svg" class="gradient gradienta gradient444" id="gradient4a">
+<img src="gradient444-01.svg" class="gradient gradientb gradient444" id="gradient4b">
+<img src="gradient444-02.svg" class="gradient gradientc gradient444" id="gradient4c">
+
+<img src="gradient555-01.svg" class="gradient gradienta gradient555" id="gradient5a">
+<img src="gradient555-01.svg" class="gradient gradientb gradient555" id="gradient5b">
+<img src="gradient555-02.svg" class="gradient gradientc gradient555" id="gradient5c">
+
+<img src="gradient666-01.svg" class="gradient gradienta gradient666" id="gradient6a">
+<img src="gradient666-01.svg" class="gradient gradientb gradient666" id="gradient6b">
+<img src="gradient666-02.svg" class="gradient gradientc gradient666" id="gradient6c">
+
+<img src="gradient777-01.svg" class="gradient gradienta gradient777" id="gradient7a">
+<img src="gradient777-01.svg" class="gradient gradientb gradient777" id="gradient7b">
+<img src="gradient777-02.svg" class="gradient gradientc gradient777" id="gradient7c">
+
+<img src="gradient888-01.svg" class="gradient gradienta gradient888" id="gradient8a">
+<img src="gradient888-01.svg" class="gradient gradientb gradient888" id="gradient8b">
+<img src="gradient888-02.svg" class="gradient gradientc gradient888" id="gradient8c">
+
+<img src="gradient999-01.svg" class="gradient gradienta gradient999" id="gradient9a">
+<img src="gradient999-01.svg" class="gradient gradientb gradient999" id="gradient9b">
+<img src="gradient999-02.svg" class="gradient gradientc gradient999" id="gradient9c">
+
+<div id="blurbackground"></div>
+</div>
+
+
+
+
+
+<div id="borderleft"></div>
+<div id="borderright"></div>
+<div id="bordertop"></div>
+<div id="borderbottom"></div>
+
+
+
+<img src="angellllllllll background.png" id="angelllbg" class="agl hidden">
+<img src="angellllllllll.png" id="angelll" class="agl hidden">
+<p id="blessedtext" class="hidden">you are blessed.</p>
+
+
+<div>
+<img src="symbol111-02.svg" class="symbol" id="symbol111">
+<img src="symbol222-07.svg" class="symbol" id="symbol222">
+<img src="symbol333-12.svg" class="symbol" id="symbol333">
+<img src="symbol444-03.svg" class="symbol" id="symbol444">
+<img src="symbol555-04.svg" class="symbol" id="symbol555">
+<img src="symbol666-10.svg" class="symbol" id="symbol666">
+<img src="symbol777-08.svg" class="symbol" id="symbol777">
+<img src="symbol888-06.svg" class="symbol" id="symbol888">
+<img src="symbol999-11.svg" class="symbol" id="symbol999">
+<img src="symbol000-09.svg" class="symbol" id="symbol000">
+</div>
+
+<div id="fixmenubutt">
+  <a id="hamcontainer"> 
+    <div id="menublack"></div>
+    <div id="menuwhite"></div></a>
+  <div id="popup-menu" class="popup-menu">
+    <a><img src="closebutt-02.svg" id="close-button"></a>
+    <ul class="menu-items">
+      <li class="popupbutt">click the center button :  randomize numbers</li>
+      <li class="popupbutt">"p" :  pause</li>
+      <li class="popupbutt">"c" :  curve the lines</li>
+      <li class="popupbutt">"s" :  straighten the lines</li>
+      <li class="popupbutt">double click :  invert color</li>
+      <li class="popupbutt">*** </li>
+      <li class="popupbutt">If the three numbers are the same, forming an angel number, you will receive a message related to that angel number. Good luck!</li>
+    </ul>
+ </div>
+</div>
+
+  <script src="script.js"></script>
+  <script src="particle.js"></script>
+  <script src="sketch.js"></script>
+  <script src="menu.js"></script>
+
+
+
+  <audio src="relaxing-145038.mp3" autoplay loop ></audio>
+
+
+
+</body>
+
+</html>

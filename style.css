@@ -1,0 +1,325 @@
+
+        * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    @font-face {
+        font-family: "DFVN Skylar";
+        src: url(DFVN\ Skylar.otf) format("opentype");
+    }
+    body {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      border: solid 5vw black;
+      overflow-x: hidden;
+      overflow-y: hidden;
+font-family:DFVN Skylar ;
+    }
+    label::selection{background-color: white;}
+    p::selection{background-color: white;}
+    h1::selection{background-color: white;}
+
+
+    canvas {
+      display: block;
+    }
+
+
+
+
+
+    #randomizeButton {
+      position: fixed; z-index: 5;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 1vw;
+      font-size: 1.5vw;
+      cursor: pointer;
+      border-radius: 50vw;
+      border: none;
+      background-color: black;
+      color: black;
+      font-family:DFVN Skylar ;
+      display: block;
+    }
+
+
+    #randomizeButton:hover{
+      color: white;
+      transition: all 0.5s ease-in-out;}
+/*
+      #randomizeButton:hover{box-sizing: border-box;
+        border: solid 0.25vw white;
+        transition: border 0.75s ease-in-out;}
+*/
+    #angelnumbername {
+      font-size: 2.5vw;
+      font-family:DFVN Skylar ;
+      transition:all 0.5s;
+    }
+
+    #details{font-size: 1.5vw;
+      font-family:'Birthstone', cursive ;
+      transition:all 0.5s;}
+    #messages{text-align: center;
+        position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 1vw;
+      cursor: pointer;
+      border: none;
+    }
+
+
+
+.box{border: solid 0px brown; text-align: left; display:flex; position:absolute; flex-direction: row-reverse;align-items: flex-end;
+z-index: 4;
+transition:all 0.25s;
+}
+
+    label{font-size: 2.5vw; transition:all 0.5s;}
+    label:hover{
+      color: white;
+      transition: color 0.5s ease-in-out;}
+
+    
+#borderleft{border-left:solid 5vw black;
+position: fixed;
+z-index: 1000;
+box-sizing: border-box;
+height: 100vh;
+width: 0;
+left: 0; top: 0;}
+#borderright{border-right: solid 5vw black;
+  position: fixed;
+  z-index: 1000;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 0;
+  right: 0; top: 0;}
+#bordertop{border-top: solid 5vw black;
+    position: fixed;
+    z-index: 1000;
+    box-sizing: border-box;
+    height: 0;
+    width: 100vw; top: 0;}
+#borderbottom{border-bottom:solid 5vw black;
+      position: fixed;
+      z-index: 1000;
+      box-sizing: border-box;
+      height: 0;
+      width: 100vw; bottom: 0;}
+#details{width: 100vw;}
+
+canvas {
+  display: block;
+}
+
+
+#blackbackground{width: 3700px; height: 1800px;
+background-color: black; position: absolute;
+z-index: 1;
+display: none;}
+
+#blurbackground{width: 3700px; height: 1800px;position: absolute;
+  z-index: 3;
+backdrop-filter: blur(3vw);
+display: none;}
+
+.gradient{position: absolute;
+  z-index: 2;}
+
+  .gradient111, .gradient222, .gradient333, .gradient444, .gradient555, .gradient666, .gradient777, .gradient888, .gradient999{display: none;}
+
+.symbol{position: absolute; width: 3vw; height: 3vw; z-index: 1000; transform: translate(-50%, -120%);
+cursor:pointer; display: none;transition:all 0.5s;}
+#symbol000{left: 5vw;}
+#symbol111{left: 9vw;}
+#symbol222{left: 13vw;}
+#symbol333{left: 17vw;}
+#symbol444{left: 21vw;}
+#symbol555{left: 25vw;}
+#symbol666{left: 29vw;}
+#symbol777{left: 33vw;}
+#symbol888{left: 37vw;}
+#symbol999{left: 41vw;}
+
+
+
+.gradienta{
+  width: 50vw;
+  height: 50vw;
+  animation-name: movearounda;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;}
+
+
+  @keyframes movearounda {
+    0%{transform:translate(-20vw, -10vw);opacity: 100%;}
+    25%{transform:translate(0vw, 20vw);opacity: 100%;}
+    50%{transform:translate(20vw, 40vw);opacity: 100%;}
+    75%{transform:translate(-50vw, 20vw);opacity: 100%;}
+    100%{transform:translate(-20vw, -10vw);opacity: 100%;}}
+    
+
+  .gradientb{
+    width: 90vw;
+    height: 90vw;
+    animation-name: movearoundb;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;}
+
+    @keyframes movearoundb {
+      0%{transform:translate(10vw, 40vw);opacity: 100%;}
+      25%{transform:translate(20vw, -20vw);opacity: 100%;}
+      50%{transform:translate(-10vw, 40vw);opacity: 100%;}
+      75%{transform:translate(-30vw, -20vw);opacity: 100%;}
+      100%{transform:translate(10vw, 40vw) ;opacity: 100%;}}
+    
+
+    .gradientc{
+      width: 150vw;
+      height: 150vw;
+      animation-name: movearoundc;
+      animation-duration: 40s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-delay: 0s;
+      animation-timing-function: ease-in-out;}
+
+
+      @keyframes movearoundc {
+        0%{transform:translate(50vw, -20vw);opacity: 100%;}
+        25%{transform:translate(20vw, 60vw);opacity: 100%;}
+        50%{transform:translate(-3vw, -40vw) ;opacity: 100%;}
+        75%{transform:translate(40vw, -30vw);opacity: 100%;}
+        100%{transform:translate(-70vw, 10vw);opacity: 100%;}}
+ 
+        
+
+
+
+
+
+
+
+      #fixmenubutt{display: flex; position: fixed;
+        z-index: 1001; 
+        }
+        
+        .popup-menu {
+          position: absolute;
+          top: 14vh;
+          left: 20vw;
+          transform: translate(0%,0%);
+          width: 50vw;
+          height: 0;
+          background-color: black;
+          border-radius: 5rem;
+          overflow: hidden;
+          opacity: 0;
+          transition: all 0.5s ease;
+          z-index: 9999;
+        }
+        /*
+        .popup-menu:hover {
+          border: solid 0.25vw white;
+          transition: border 0.75s ease-in-out;}
+        */
+
+
+        .popup-menu.open {
+        height: 31vw;
+        opacity: 1;
+        }
+        
+        .menu-items {
+        list-style: none;
+        padding: 0;
+        margin: 4vw;
+        }
+        
+        .menu-items li {
+        margin-bottom: 2vw;
+        transition: background-color 0.5s ease;
+        text-align: left;
+        font-size: 1.5vw;
+        text-decoration: none;color: white;width: 40vw;
+        line-height: 1;
+
+        }
+  
+        
+        #close-button{
+        position: absolute; width: 2vw; height: 2vw;;
+        top: 3vw;
+        right: 3vw;
+        cursor: pointer;
+        }
+
+        #close-button:hover{transform: rotate(90deg);
+        transition: all 0.5s;}
+        
+        
+        #hamcontainer {
+          display: flex;
+          position: fixed;
+          z-index: 9999;
+        }
+        #menublack{background-color: black;
+          width: 3vw; height: 3vw; border-radius: 50vw; position: fixed;
+          right: 6vw; top: 6vw; z-index: 9999;cursor: pointer;
+          }
+          
+          #menuwhite{background-color: black;
+            width: 1vw; height: 1vw; border-radius: 50vw; position: fixed;
+            right: 7vw; top: 7vw;z-index: 9999;cursor: pointer;
+          }
+            #menuwhite:hover{background-color: white;
+              transition: all 0.5s ease-in-out;}
+              #menublack:hover ~ #menuwhite{background-color: white;
+                transition: all 0.5s ease-in-out;}
+
+                #hamcontainer:hover > #menublack{
+                  border: solid 0.4vw white;
+                  transition: all 0.5s ease-in-out;}
+                  #menuwhite:hover ~ #menublack{
+                    border: solid 0.45vw white;
+                    transition: all 0.5s ease-in-out;}
+                    #menublack:hover{
+                      border: solid 0.45vw white;
+                      transition: all 0.5s ease-in-out;}
+
+
+
+
+                      .agl{position: fixed; top: 0vw; left: 0vw;
+                        z-index: 6;}
+                  
+                      #angelllbg{height: 100vh; width: 100vw;}
+                  
+                      #angelll{top: -20vw;}
+#blessedtext{color: white;font-family:'Birthstone', cursive ; font-size: 3vw; position: absolute; top: 50vh; left: 25vw;
+z-index: 6;}
+            .hidden{display: none;}
+
+
+audio{z-index: 99999;}
+                
+/*cursor*/
+
+html {
+  cursor: url("cursor-01.svg"), auto;
+}
+
